@@ -20,28 +20,69 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+
         <div class="topBar"></div>
 
         <div class="mainContainer">
 
-            <div class="tabContainer">
+            <div class="leftBar"></div>
 
+            <div class="tabContainer">
                 <div class="tabBar"></div>
 
                 <div class="linkBar"></div>
-
             </div>
 
-            <div class="leftBar"></div>
 
-            <ul class="listContainer">
-                <li class="repoItems"></li>
-          
-            </ul>
+            <div class="listContainer">
+
+                
+
+            </div>
+        
 
         </div>
 
-        // <script type="text/template" class="Goodmorning-template">
+    <!-- repo template -->
+    <script type="text/template" class="objectName">
+        <div class = "repo-info">
+            
+            <div class="book">
+                <img src="images-2/book-icon-big.png">
+            </div>
+            
+            <h3><%=name%></h3>
+                
+                <div class="updated"><%=updated_at%></div>
+                
+                <div class="languageStarFork">
+                    
+                    <span class="language"><%=language%></span>
+
+                    
+                    <span class="starImg">
+                        <img src="images-2/star-icon.png">
+                    </span>
+                    <span class="gazerCount">
+                        <%=stargazers_count%>
+                    </span>
+                    <span class="forkImg">
+                        <img src="images-2/fork-icon.png">
+                    </span>
+                    <span class="forkCount">
+                        <%=forks_count%>
+                    </span>
+                    
+                    
+                </div>
+            
+            
+        </div>
+    </script>
+<!-- end repo template -->
+
+<!-- cool templ -->
+        <script type="text/template" class="Goodmorning-template">
         //         <h1>  Goodmorning, <%= person %>,</h1>
         //         <h2> you are looking <%= feeling %> today. </h2>
         // </script>
@@ -71,6 +112,7 @@
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/git-data.js"></script>
+        <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>
 </html>

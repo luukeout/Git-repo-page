@@ -20,6 +20,72 @@
 
 // console.log(renderedNameTag);
 
-// How do I get info from a set of data into this template?
 
-// I think I need to 
+
+
+
+
+
+
+console.log('main')
+
+//Creating the renderRepo function. This looks through the repoData
+// from github.
+function renderRepo(data) {
+	
+
+	// forEach through the repoData which is an object.
+	data.forEach(function(obj){
+		
+		
+		// This takes my script class objectName and stores it in a
+		// template called repoInfo.
+		var repoInfo = _.template ($('.objectName').text());
+		// console.log(object.name);
+		
+
+
+		// This takes my template repoInfo with the data from my forEach,
+		// obj, and stores it in the variable renderedObject.
+		var renderedObject = repoInfo(obj)
+		console.log(renderedObject);
+
+
+		// Now I take renderedObject and append it to the listContainer div.
+		$('.listContainer').append(renderedObject);
+		
+		
+	});
+};
+
+
+
+// $.getJSON... gets the api data from github. .done makes js finish
+// getting all the data before it moves on to the next thing. 
+// The next thing is to run my function called renderRepo.
+console.log($.getJSON('https://api.github.com/users/luukeout/repos?client_id=&client_secret='))
+$.getJSON('https://api.github.com/users/luukeout/repos?client_id=&client_secret=').done(function(data){
+	renderRepo(data);
+});
+
+
+
+
+
+// https:api.github.com/users/whatever?client_id=xxxx&client_secret=yyyy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
