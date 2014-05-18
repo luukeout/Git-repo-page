@@ -53,24 +53,28 @@ function renderRepo(data) {
 
 		// Now I take renderedObject and append it to the listContainer div.
 		$('.listContainer').append(renderedObject);
-		
-		
-	});
+		});
 };
-
-
 
 // $.getJSON... gets the api data from github. .done makes js finish
 // getting all the data before it moves on to the next thing. 
 // The next thing is to run my function called renderRepo.
 console.log($.getJSON('https://api.github.com/users/luukeout/repos?client_id=&client_secret='))
-$.getJSON('https://api.github.com/users/luukeout/repos?client_id=&client_secret=').done(function(data){
+$.getJSON('https://api.github.com/users/luukeout/repos?client_id=a584e56428e2402a0f67&client_secret=a7536f135657ee274e8697b0da2e6ae068c669bf').done(function(data){
 	renderRepo(data);
 });
 
+$.getJSON('https://api.github.com/users/luukeout?client_id=a584e56428e2402a0f67&client_secret=a7536f135657ee274e8697b0da2e6ae068c669bf').done(function(data){
+	renderUser(data);
+});
 
-
-
+// This function is just like the above without the forEach. It's pull info data
+// from an object, not an array. 
+function renderUser(data) {
+	var userInfo = _.template ($('.leftBar').text());
+	var renderedUser = userInfo(data);
+	$('.leftBar').append(renderedUser);
+};
 
 // https:api.github.com/users/whatever?client_id=xxxx&client_secret=yyyy
 

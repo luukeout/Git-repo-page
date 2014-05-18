@@ -3,7 +3,7 @@
 
 body {
     margin: 0;
-
+    font-family: 'Open Sans', sans-serif;
     
 }
 
@@ -51,16 +51,58 @@ body {
     width: 230px;
     height: 418px;
     padding: 0px 10px;
-    border: 1px solid #eee;
+    // border: 1px solid #eee;
+}
+
+.avatar img {
+    width: 230px;
+    height: 230px;
+    border-radius: 6px;
+}
+
+.username {
+    width: 230px;
+    height: 24px;
+    padding: 6px 0px 14px;
+    font-family: helvetica;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    color: #666;
+}
+
+.createdDate {
+    width: 230px;
+    height: 23px;
+    padding: 15px 0px;
+    border-top: 1px solid #eee;
+}
+
+.followerStats {
+    width: 230px;
+    height: 43px;
+    padding: 15px 0px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.followers, .starred, .following {
+    display: inline-block;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1;
+    color: #222;
 }
 
 .listContainer {
     display: inline-block;
+    width: 730px;
+    height: 931px;
     margin: 0;
     padding-top: 10px;
     padding-left: 10px;
-    width: 730px;
-    height: 931px;
+    font-family: 'Open Sans', sans-serif;
 
     // border: 1px solid #eee;
     
@@ -75,12 +117,13 @@ body {
     padding-bottom: 20px;
     padding-left: 45px;
     list-style: none;
+
 }
 
 .book {
     position: absolute;
     left: 0;
-    float: left;
+    // float: left;
     opacity: .4;
 }
 
@@ -97,6 +140,7 @@ body {
     position: absolute;
     bottom: 42px;
     right: 0;
+    
     text-align: center;
     font-weight: bold;
     font-size: 12px;
@@ -107,7 +151,8 @@ body {
         // }
 }
 
-.language {
+.language, .gazerCount {
+
     text-align: center;
     // display: inline-block;
     // float: left;
@@ -115,33 +160,32 @@ body {
     padding-right: 10px;
 }
 
-.starImg {
+.starImg, .forkImg, .forkCount {
     text-align: center;  
     // display: inline-block;
-    
-
 }
 
-.gazerCount {
-    text-align: center;
-    // display: inline-block;
-    padding-right: 10px;
-    
+// img:hover {
+//     color: #4183c4;
+// }
 
-}
+// .gazerCount {
+//     text-align: center;
+//     // display: inline-block;
+//     padding-right: 10px;
+// }
 
-.forkImg {
-    text-align: center;
-    // display: inline-block;
-    
-}
+// .forkImg {
+//     text-align: center;
+//     // display: inline-block;
+// }
 
-.forkCount {
-    text-align: center;
-    // display: inline-block;
-    // padding: 0px 5px 5px 5px;
+// .forkCount {
+//     text-align: center;
+//     // display: inline-block;
+//     // padding: 0px 5px 5px 5px;
     
-}
+// }
 
 h3 {
     
