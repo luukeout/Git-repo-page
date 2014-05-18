@@ -57,13 +57,18 @@
     </div>
 
     <div class="createdDate">
-        <span><%=created_at%></span>
+        <span class="clock"><img src= "images-2/clock-icon.png"></span>
+        <span> Joined on <%=moment(created_at).format('MMM DD, YYYY')%></span>
     </div>
 
     <div class="followerStats">
-        <div class="followers"><%=followers%></div>
+        <div class="followers"><%=followers%>
+        </div>
         <div class="starred">0</div>
         <div class="following"><%=following%></div>
+        <span class="words">Followers</span>
+        <span class="words">Starred</span>
+        <span class="words">Following</span>
     </div>
 
 </script>
@@ -80,7 +85,7 @@
         
         <h3><%=name%></h3>
             
-            <div class="updated"><%=updated_at%></div>
+            <div class="updated">Last updated <%=moment(updated_at).format('dddd [at] h:mma')%></div>
             
             <div class="languageStarFork">
                 
