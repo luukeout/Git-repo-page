@@ -21,21 +21,28 @@
 // console.log(renderedNameTag);
 
 
-
-
-
-
-
-
 console.log('main')
 
 //Creating the renderRepo function. This looks through the repoData
 // from github.
 function renderRepo(data) {
+
+
+//This underscore method sorts the updated_at property and reverses it
+//to display in the right order. 
+	_.sortBy(data, function(obj){ 
+		return obj.updated_at
+		 }).reverse()
+	
 	
 
 	// forEach through the repoData which is an object.
-	data.forEach(function(obj){
+	.forEach(function(obj){
+		
+	
+		// _.sortBy(obj,(function(obj){updated_at});
+
+			
 		
 		
 		// This takes my script class objectName and stores it in a
@@ -47,7 +54,7 @@ function renderRepo(data) {
 
 		// This takes my template repoInfo with the data from my forEach,
 		// obj, and stores it in the variable renderedObject.
-		var renderedObject = repoInfo(obj)
+		var renderedObject = repoInfo(obj);
 		console.log(renderedObject);
 
 

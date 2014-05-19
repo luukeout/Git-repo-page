@@ -99,7 +99,7 @@ body {
 }
 
 .followers, .starred, .following {
-    display: inline-block;
+    display: inline-block;  
     margin: 0px 28px;
     font-size: 28px;
     font-weight: bold;
@@ -107,8 +107,11 @@ body {
     color: #222;
 }
 
+.followers:hover, .starred:hover, .following:hover {
+    color: #4183c4;
+}
+
 .words {
-    
     margin: 0 13px;
     display: inline-block;
     font-size: 11px;
@@ -166,12 +169,9 @@ body {
 
     text-align: center;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 11px;
 
     opacity: .7;
-        // img {
-        //     padding: 0px 5px;
-        // }
 }
 
 .language, .gazerCount {
@@ -188,27 +188,10 @@ body {
     // display: inline-block;
 }
 
-// img:hover {
-//     color: #4183c4;
-// }
-
-// .gazerCount {
-//     text-align: center;
-//     // display: inline-block;
-//     padding-right: 10px;
-// }
-
-// .forkImg {
-//     text-align: center;
-//     // display: inline-block;
-// }
-
-// .forkCount {
-//     text-align: center;
-//     // display: inline-block;
-//     // padding: 0px 5px 5px 5px;
+.gazerCount:hover, .forkCount:hover {
+    color: #4183c4;
     
-// }
+}
 
 h3 {
     
