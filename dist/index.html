@@ -1,0 +1,69 @@
+<!DOCTYPE html><html class=no-js><head><meta charset=utf-8><title>bower project</title><meta name=description content=""><meta name=viewport content="width=device-width"><link rel="shortcut icon" href=/6df2b309.favicon.ico><!-- Place favicon.ico and apple-touch-icon.png in the root directory --><link rel=stylesheet href=styles/395ccf08.main.css><link href="http://fonts.googleapis.com/link    css?family=Open+Sans" rel=stylesheet type=text/css><body><!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]--><div class=topBar></div><div class=mainContainer><div class=leftBar></div><div class=tabContainer><div class=tabBar></div><div class=linkBar></div></div><div class=listContainer></div></div><!--  leftBar template --><script type=text/template class=leftBar><div class="avatar">
+        <img src= <%=avatar_url%></img>
+    </div>
+
+    <div class="username">
+        <span><%=login%></span>
+    </div>
+
+    <div class="createdDate">
+        <span class="clock"><img src= "images-2/clock-icon.png"></span>
+        <span> Joined on <%=moment(created_at).format('MMM DD, YYYY')%></span>
+    </div>
+
+    <div class="followerStats">
+        <div class="followers"><%=followers%>
+        </div>
+        <div class="starred">0
+        </div>
+        <div class="following"><%=following%>
+        </div>
+            <span class="words">Followers</span>
+            <span class="words">Starred</span>
+            <span class="words">Following</span>
+    </div></script><!-- end leftBar template --><!-- repo template --><script type=text/template class=objectName><div class = "repo-info">
+        
+        <div class="book">
+            <img src="images-2/book-icon-big.png">
+        </div>
+        
+        <h3><%=name%></h3>
+            
+            <div class="updated">Last updated <%=moment(updated_at).format('dddd [at] h:mma')%></div>
+            
+            <div class="languageStarFork">
+                
+                <span class="language"><%=language%></span>
+
+                
+                <span class="starImg">
+                    <img src="images-2/star-icon.png">
+                </span>
+                <span class="gazerCount">
+                    <%=stargazers_count%>
+                </span>
+                
+                
+                <span class="forkImg">
+                    <img src="images-2/fork-icon.png">
+                </span>
+                <span class="forkCount">
+                    <%=forks_count%>
+                </span>
+                
+                
+                
+            </div>
+        
+        
+    </div></script><!-- end repo template --><!-- cool templ --><script type=text/template class=Goodmorning-template>//         <h1>  Goodmorning, <%= person %>,</h1>
+        //         <h2> you are looking <%= feeling %> today. </h2>
+        //</script>//<script type=text/template class=name-template>//     <h1> My name is, <%= person %>.<h1>
+        //</script><script src=scripts/27c882be.vendor.js></script><!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');</script><script src=scripts/79554c09.main.js></script>
