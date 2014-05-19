@@ -80,7 +80,7 @@ $.getJSON('https://api.github.com/users/luukeout?client_id=&client_secret=').don
 function renderUser(data) {
 	var userInfo = _.template ($('.leftBar').text());
 	var renderedUser = userInfo(data);
-	$('.leftBar').append(renderedUser);
+	$('.sideBar').append(renderedUser);
 };
 
 // https:api.github.com/users/whatever?client_id=xxxx&client_secret=yyyy
